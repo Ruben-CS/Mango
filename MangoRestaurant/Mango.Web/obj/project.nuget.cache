@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AZMCKnDDeqGX/Ksviy1WJ9KHs8f1jZbuY/9gfhvIOCLmR5T4sd3Ulj82gC3LC04AGhQEfy9Vsh1QF9JK/y04rg==",
+  "success": true,
+  "projectFilePath": "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Mango.Web.csproj",
+  "expectedPackageFiles": [
+    "/home/rubenf/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.13/microsoft.netcore.app.host.linux-x64.6.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
