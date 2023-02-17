@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ka+N9ShnjRzoGLqkCxJgk/5/I/eUBmKZKCMa0/un75cEON7Ew7+rPszFL3PlcHVX+C+wpgyoy+DECFmmijPcJA==",
+  "dgSpecHash": "o3BZOPL5zA9M3f1z+TaMiFs5e1IvfKk6lHyrPTVj37mlD/OsSQ+I+DAUG21+YV6Xj2oyJAVfuhwBjmlcQNlmlw==",
   "success": true,
   "projectFilePath": "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Mango.Web.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "/home/rubenf/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/home/rubenf/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "/home/rubenf/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/home/rubenf/.nuget/packages/newtonsoft.json/13.0.3-beta1/newtonsoft.json.13.0.3-beta1.nupkg.sha512",
     "/home/rubenf/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/home/rubenf/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/home/rubenf/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
