@@ -1,68 +1,73 @@
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 using Mango.Web.Models;
 using Mango.Web.Services.IServices;
 
-namespace Mango.Web.Services;
-
-public class ProductService : BaseService, IProductService
+namespace Mango.Web.Services
 {
-    private readonly IHttpClientFactory _clientFactory;
-    
-    public ProductService(IHttpClientFactory httpClientFactory) : base(
-        httpClientFactory)
+    public class ProductService : BaseService, IProductService
     {
-        _clientFactory = httpClientFactory;
-    }
+        private readonly IHttpClientFactory HttpClientFactory;
 
-    public async Task<T> GetAllProductsAsync<T>()
-    {
-        return await SendAsync<T>(new ApiRequest()
+        public ProductService(IHttpClientFactory httpClientFactory) : base(
+            httpClientFactory)
         {
-            Type        = SD.ApiType.GET,
-            Url         = $"{SD.ProductAPIBase}/api/products",
-            AccessToken = ""
-        });
-    }
+            // Print in terminal
+            // System.Diagnostics.Debug.Write($"********* SD.ProductAPIBase: {SD.ProductAPIBase}");
+            this.HttpClientFactory = httpClientFactory;
+        }
 
-    public async Task<T> GetProductById<T>(int id)
-    {
-        return await SendAsync<T>(new ApiRequest()
+        public async Task<T> GetAllProductsAsync<T>()
         {
-            Type        = SD.ApiType.POST,
-            Data        = typeof(ProductDto),
-            Url         = $"{SD.ProductAPIBase}/api/products/{id}",
-            AccessToken = ""
-        });
-    }
+            return await this.SendAsync<T>(new ApiRequest()
+            {
+                Type        = SD.ApiType.GET,
+                Url         = $"{SD.ProductAPIBase}/api/products",
+                AccessToken = ""
+            });
+        }
 
-    public async Task<T> CreateProductAsync<T>(ProductDto productDto)
-    {
-        return await SendAsync<T>(new ApiRequest()
+        public async Task<T> GetProductByIdAsync<T>(int productId)
         {
-            Type        = SD.ApiType.POST,
-            Data        = productDto,
-            Url         = $"{SD.ProductAPIBase}/api/products",
-            AccessToken = ""
-        });
-    }
+            return await this.SendAsync<T>(new ApiRequest()
+            {
+                Type        = SD.ApiType.GET,
+                Url         = $"{SD.ProductAPIBase}/api/products/{productId}",
+                AccessToken = ""
+            });
+        }
 
-    public async Task<T> UpdateProductAsync<T>(ProductDto productDto)
-    {
-        return await SendAsync<T>(new ApiRequest()
+        public async Task<T> CreateProductAsync<T>(ProductDto productDto)
         {
-            Type        = SD.ApiType.PUT,
-            Data        = productDto,
-            Url         = $"{SD.ProductAPIBase}/api/products",
-            AccessToken = ""
-        });
-    }
+            return await this.SendAsync<T>(new ApiRequest()
+            {
+                Type        = SD.ApiType.POST,
+                Data        = productDto,
+                Url         = $"{SD.ProductAPIBase}/api/products",
+                AccessToken = ""
+            });
+        }
 
-    public async Task<T> DeleteProductAsync<T>(int id)
-    {
-        return await SendAsync<T>(new ApiRequest()
+        public async Task<T> UpdateProductAsync<T>(ProductDto productDto)
         {
-            Type        = SD.ApiType.DELETE,
-            Url         = $"{SD.ProductAPIBase}/api/products",
-            AccessToken = ""
-        });
+            return await this.SendAsync<T>(new ApiRequest()
+            {
+                Type        = SD.ApiType.PUT,
+                Data        = productDto,
+                Url         = $"{SD.ProductAPIBase}/api/products",
+                AccessToken = ""
+            });
+        }
+
+        public async Task<T> DeleteProductAsync<T>(int productId)
+        {
+            return await this.SendAsync<T>(new ApiRequest()
+            {
+                Type        = SD.ApiType.DELETE,
+                Url         = SD.ProductAPIBase + "/api/products/" + productId,
+                AccessToken = ""
+            });
+        }
     }
 }
