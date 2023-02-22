@@ -1,75 +1,92 @@
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json.Serialization;
+using System.Threading.Tasks;
 using Mango.Web.Models;
 using Mango.Web.Services.IServices;
 using Newtonsoft.Json;
 
-namespace Mango.Web.Services;
-
-public class BaseService : IBaseService
+namespace Mango.Web.Services
 {
-    public ResponseDto        responseModel     { get; set; }
-    public IHttpClientFactory HttpClientFactory { get; set; }
-
-    public BaseService(IHttpClientFactory httpClientFactory)
+    public class BaseService : IBaseService
     {
-        responseModel     = new ResponseDto();
-        HttpClientFactory = httpClientFactory;
-    }
+        public ResponseDto        _responseDto { get; set; }
+        public IHttpClientFactory httpClient   { get; set; }
 
-    public void Dispose()
-    {
-        throw new NotImplementedException();
-    }
-
-    public async Task<T> SendAsync<T>(ApiRequest apiRequest)
-    {
-        try
+        public BaseService(IHttpClientFactory httpClient)
         {
-            var client  = HttpClientFactory.CreateClient("MangoApi");
-            var message = new HttpRequestMessage();
-            message.Headers.Add("Accept", "application/json");
-            message.RequestUri = new Uri(apiRequest.Url);
-            if (apiRequest.Data != null)
-            {
-                message.Content = new StringContent(JsonConvert
-                .SerializeObject(apiRequest.Data),Encoding.UTF8,
-                "application/json");
-            }
-
-            HttpResponseMessage apiResponse = null;
-            switch (apiRequest.Type)
-            {
-                case SD.ApiType.POST:
-                    message.Method = HttpMethod.Post;
-                    break;
-                case SD.ApiType.PUT:
-                    message.Method = HttpMethod.Put;
-                    break;
-                case SD.ApiType.DELETE:
-                    message.Method = HttpMethod.Delete;
-                    break;
-                default:
-                    message.Method = HttpMethod.Get;
-                    break;
-            }
-
-            apiResponse = await client.SendAsync(message);
-            var apiContent     = await apiResponse.Content.ReadAsStringAsync();
-            var apiResponseDto = JsonConvert.DeserializeObject<T>(apiContent);
-            return apiResponseDto;
+            _responseDto = new ResponseDto();
+            this.httpClient   = httpClient;
         }
-        catch (Exception e)
+
+        public async Task<T> SendAsync<T>(ApiRequest apiRequest)
         {
-            var dto = new ResponseDto()
+            try
             {
-                DisplayMessage = "Error",
-                ErrorMessages = new List<string>()
-                    { Convert.ToString(e.Message) },
-                IsSucces = false
-            };
-            var res            = JsonConvert.SerializeObject(dto);
-            var apiResponseDto = JsonConvert.DeserializeObject<T>(res);
-            return apiResponseDto;
+                var client  = httpClient.CreateClient("MangoAPI");
+                var message = new HttpRequestMessage();
+
+                message.Headers.Add("Accept", "application/json");
+                message.RequestUri = new Uri(apiRequest.Url);
+                client.DefaultRequestHeaders.Clear();
+
+                if (apiRequest.Data != null)
+                {
+                    message.Content = new StringContent(
+                        JsonConvert.SerializeObject(apiRequest.Data),
+                        Encoding.UTF8,
+                        "application/json");
+                }
+
+                HttpResponseMessage apiResponse = null;
+
+                switch (apiRequest.Type)
+                {
+                    case SD.ApiType.POST:
+                        message.Method = HttpMethod.Post;
+                        break;
+                    case SD.ApiType.PUT:
+                        message.Method = HttpMethod.Put;
+                        break;
+                    case SD.ApiType.DELETE:
+                        message.Method = HttpMethod.Delete;
+                        break;
+
+                    default:
+                        message.Method = HttpMethod.Get;
+                        break;
+                }
+
+                apiResponse = await client.SendAsync(message);
+
+                var apiContent = await apiResponse.Content.ReadAsStringAsync();
+                var apiResponseDto =
+                    JsonConvert.DeserializeObject<T>(apiContent);
+
+                return apiResponseDto;
+            }
+            catch (Exception e)
+            {
+                var dto = new ResponseDto
+                {
+                    DisplayMessage = "Error",
+                    ErrorMessages = new List<string>
+                        { Convert.ToString(e.Message) },
+                    IsSucces = false
+                };
+
+                var res            = JsonConvert.SerializeObject(dto);
+                var apiResponseDto = JsonConvert.DeserializeObject<T>(res);
+
+                return apiResponseDto;
+            }
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(true);
         }
     }
 }
