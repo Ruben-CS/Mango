@@ -3,6 +3,7 @@
   <component name="EfCoreDialogsState">
     <option name="keyValueStorage">
       <map>
+        <entry key="Common:11ca8d50-7811-488b-a82e-bda9236fa2ae:dbContext" value="Mango.Services.Identity.DbContexts.AppDbContext" />
         <entry key="Common:buildConfiguration" value="Debug" />
         <entry key="Common:f965ef0d-d907-4c26-9332-c62b279462e0:dbContext" value="Mango.Services.ProductAPI.DbContexts.ApplicationDbContext" />
         <entry key="Common:noBuild" value="false" />

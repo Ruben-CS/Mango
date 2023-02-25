@@ -50,3 +50,8 @@
 /home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/obj/Debug/net7.0/Mango.Services.ProductAPI.pdb
 /home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/obj/Debug/net7.0/Mango.Services.ProductAPI.genruntimeconfig.cache
 /home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/obj/Debug/net7.0/ref/Mango.Services.ProductAPI.dll
+/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/bin/Debug/net7.0/Duende.IdentityServer.dll
+/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/bin/Debug/net7.0/Duende.IdentityServer.AspNetIdentity.dll
+/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/bin/Debug/net7.0/Duende.IdentityServer.Storage.dll
+/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/bin/Debug/net7.0/IdentityModel.dll
+/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
