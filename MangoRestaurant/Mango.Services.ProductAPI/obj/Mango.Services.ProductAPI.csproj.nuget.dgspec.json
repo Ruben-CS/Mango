@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/Mango.Services.ProductAPI.csproj": {}
+    "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj": {}
   },
   "projects": {
-    "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/Mango.Services.ProductAPI.csproj": {
+    "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/Mango.Services.ProductAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj",
         "projectName": "Mango.Services.ProductAPI",
-        "projectPath": "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/Mango.Services.ProductAPI.csproj",
-        "packagesPath": "/home/rubenf/.nuget/packages/",
-        "outputPath": "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Services.ProductAPI/obj/",
+        "projectPath": "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj",
+        "packagesPath": "C:\\Users\\ruben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Services.ProductAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/rubenf/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ruben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,17 +60,13 @@
               "target": "Package",
               "version": "[7.0.3, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.3, )"
             },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[7.0.2, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.3, )"
             },
@@ -104,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

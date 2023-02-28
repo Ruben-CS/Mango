@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Mango.Web.csproj": {}
+    "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Web\\Mango.Web.csproj": {}
   },
   "projects": {
-    "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Mango.Web.csproj": {
+    "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Web\\Mango.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Mango.Web.csproj",
+        "projectUniqueName": "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Web\\Mango.Web.csproj",
         "projectName": "Mango.Web",
-        "projectPath": "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Mango.Web.csproj",
-        "packagesPath": "/home/rubenf/.nuget/packages/",
-        "outputPath": "/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/obj/",
+        "projectPath": "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Web\\Mango.Web.csproj",
+        "packagesPath": "C:\\Users\\ruben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ruben\\Documents\\Repos\\Mango\\MangoRestaurant\\Mango.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/rubenf/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ruben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +45,10 @@
               "version": "[6.2.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.3, )"
             },
@@ -76,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

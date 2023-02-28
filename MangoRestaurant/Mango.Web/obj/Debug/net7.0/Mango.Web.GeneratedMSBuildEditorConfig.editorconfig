@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Mango.Web
 build_property.RootNamespace = Mango.Web
-build_property.ProjectDir = /home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/
+build_property.ProjectDir = C:\Users\ruben\Documents\Repos\Mango\MangoRestaurant\Mango.Web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web
+build_property.MSBuildProjectDirectory = C:\Users\ruben\Documents\Repos\Mango\MangoRestaurant\Mango.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Product/ProductCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9Qcm9kdWN0Q3JlYXRlLmNzaHRtbA==
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Product/ProductCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0Q3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Product/ProductDelete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9Qcm9kdWN0RGVsZXRlLmNzaHRtbA==
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Product/ProductDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0RGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Product/ProductEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9Qcm9kdWN0RWRpdC5jc2h0bWw=
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Product/ProductEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0RWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Product/ProductIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9Qcm9kdWN0SW5kZXguY3NodG1s
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Product/ProductIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0SW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Shared/Pages/Product/ProductIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhZ2VzL1Byb2R1Y3QvUHJvZHVjdEluZGV4LmNzaHRtbA==
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Shared/Pages/Product/ProductIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhZ2VzXFByb2R1Y3RcUHJvZHVjdEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rubenf/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-vye9fgwswy
+[C:/Users/ruben/Documents/Repos/Mango/MangoRestaurant/Mango.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cte7x7hm27
